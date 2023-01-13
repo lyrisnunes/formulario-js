@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="content">
+        <h1>Preencha o Formulário</h1>
+        <h3>Vagas para devs</h3>
+        <form id="form">
+                <div>
+                    <input type="text" placeholder="digite seu nome" class="inputs required" oninput="nameValidate()">
+                    <span class="span-required">O nome deve ter no mínimo 3 caracteres</span>
+                </div>
+                <div>
+                    <input type="text" placeholder="digite seu E-mail" class="inputs required" oninput="emailValidate()">
+                    <span class="span-required">Digite um E-mail valido</span>
+                </div>
+                <div>
+                    <input type="password" placeholder="Digite sua senha" class="inputs required" oninput="mainPasswordValidate()">
+                    <span class="span-required">Digite uma senha com no mínimo 8 caracteres</span>
+                </div>
+                <div>
+                    <input type="password" placeholder="Repita sua senha" class="inputs required" oninput="comparePassword()">
+                    <span class="span-required">Senhas devem ser compatíveis</span>
+                </div>
+
+                <textarea name="description" id="description" cols="25" rows="10" placeholder="Fale sobre você"></textarea>
+            
+                <h3>Você é desenvolvedor :</h3>
+
+                <div class="box-select">
+                    <div>
+                        <input type="radio" id="f" value="f" name="profession">
+                        <label for="f">Front - End</label>
+                    </div>
+                    <div>
+                            <input type="radio" id="b" value="b" name="profission">
+                            <label for="b">Back - End</label>
+                    </div>
+                </div>    
+
+                <h3>Qual seu nível:</h3>
+                    <div class="box-select">
+                        <div>
+                                <input type="radio" id="ba" value="ba" name="level">
+                                <label for="ba">Básico</label>
+                        </div>
+                        <div>
+                                <input type="radio" id="i" value="i" name="level">
+                                <label for="i">Intermediário</label>
+                        </div>
+                        <div>
+                                <input type="radio" id="a" value="a" name="level">
+                                <label for="a">Avançado</label>
+                        </div>
+                </div>
+
+                <h3>Quais suas experiências ?</h3>
+                    <div class="box-select">
+                        <div>
+                            <input type="checkbox" id="html" value="html" name="experiencias">
+                            <label for="html">Html</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="css" value="css" name="experiencias">
+                            <label for="css">Css</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="js" value="js" name="experiencias">
+                            <label for="js">JavaScript</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="php" value="php" name="experiencias">
+                            <label for="php">PHP</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="java" value="java" name="experiencias">
+                            <label for="java">Java</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="php" value="php" name="experiencias">
+                            <label for="php">Php</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="python" value="python" name="experiencias">
+                            <label for="python">python</label>
+                        </div>
+                    </div>
+                    <button type="submit">Enviar</button>
+            </div>
+        </form>
+    <script src="script.js"></script>
+</body>
+
+</html>
