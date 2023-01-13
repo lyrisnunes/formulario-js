@@ -26,10 +26,9 @@ body{
     text-align: center;   
 }
 
-.content h3{
+.content .sub{
     text-align: center;
-    margin-bottom: 1rem; 
-    
+    margin-bottom: 1rem;  
 }
 
 .content form{
@@ -55,12 +54,16 @@ input{
     border-color:  #9333FF;
 }
 
+select{
+    padding: 1rem;
+}
+
 textarea{
     padding: 7px 5px;
 }
 
 .content h3{
-    padding-bottom: .2rem;
+    margin: 0;
     text-align: center;
 }
 
