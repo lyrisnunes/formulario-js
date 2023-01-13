@@ -59,9 +59,9 @@ textarea{
     padding: 7px 5px;
 }
 
-h3{
+.content h3{
+    padding-bottom: .2rem;
     text-align: center;
-    margin-bottom: .8rem;
 }
 
 .box-select{
