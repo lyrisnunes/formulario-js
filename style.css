@@ -8,22 +8,31 @@
 }
 
 body{
-    background-color: #111827;
+    background-image: linear-gradient(to right, rgb(20, 147, 220), rgb(17, 54, 71));
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .content{
-    background-color: #f8fafc;
+    background-color: rgba(0, 0, 0, 0);
     padding: 1rem;
     min-width: 50%;
     overflow: auto;
     margin: 1rem;
 }
 
-.content h1{
+.content legend{
     text-align: center;   
+    font-size: 1.2rem;
+    background-color: dodgerblue;
+    color: white;
+    border-radius: 8px;
+    padding: 8px;
+}
+
+.content h3{
+    color: dodgerblue;
 }
 
 .content .sub{
@@ -35,6 +44,12 @@ body{
     display: flex;
     flex-direction: column;
     gap: .8rem;
+}
+
+fieldset{
+    background-color: white;
+    border: 3px solid dodgerblue;
+    padding: 1rem 2rem;
 }
 
 .span-required{
@@ -51,11 +66,13 @@ input{
 }
 
 .inputs:focus{
-    border-color:  #9333FF;
+    border-color: dodgerblue  ;
 }
 
 select{
-    height: 30px;
+    height: 40px;
+    padding: 5px 10px;
+    border-radius: none;
 }
 
 textarea{
@@ -65,41 +82,55 @@ textarea{
 .content h3{
     margin: 0;
     text-align: center;
+    color: black;
 }
 
 .box-select{
     display: grid;
     justify-content: center;
     align-items: center;
-    grid-template-columns: repeat(7,1fr);
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
 }
 
 .box-select div{
+    display: grid;
     align-items: center;
+    text-align: center;
 }
 
 button[type="submit"]{
-    padding: 1rem;
-    font-size: 1.2rem;
-    outline: none;
+    background-image: linear-gradient(to right,rgb(0, 92, 197), rgb(90, 20, 220));
+    width: 100%;
     border: none;
-    border-radius: 5px;
-    margin-top: 1rem;
-    background-color:#701a75;
-    color: #f8fafc;
+    padding: 15px;
+    color: white;
+    font-size: 15px;
     cursor: pointer;
-    transition: .3s;
+    border-radius: 10px;
 }
 
 button[type="submit"]:hover{
-    background-color: #a21caf;
+    background-image: linear-gradient(to right,rgb(0, 80, 172), rgb(80, 19, 195));
 }
 
-@media(max-width: 576px) {
+@media(max-width: 550px) {
     .box-select{
         text-align: center;
-        grid-template-columns: repeat(1,1fr);
+        grid-template-columns: repeat(3,1fr);
         gap: 20px;
     }
+
+    select{
+        padding: 5px 10px;
+        border-radius: none;
+    }
 }
+
+@media(max-width:450px) {
+    select{
+        height: 60px;
+    }
+}
+
 

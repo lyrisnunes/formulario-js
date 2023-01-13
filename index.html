@@ -9,75 +9,74 @@
 </head>
 <body>
     <div class="content">
-        <h1>Preencha o Formulário</h1>
-        <h3 class="sub">Vagas para devs</h3>
-        <form id="form">
-                <div>
-                    <input type="text" placeholder="digite seu nome" class="inputs required" oninput="nameValidate()">
-                    <span class="span-required">O nome deve ter no mínimo 3 caracteres</span>
-                </div>
-                <div>
-                    <input type="text" placeholder="digite seu E-mail" class="inputs required" oninput="emailValidate()">
-                    <span class="span-required">Digite um E-mail valido</span>
-                </div>
-                <div>
-                    <input type="password" placeholder="Digite sua senha" class="inputs required" oninput="mainPasswordValidate()">
-                    <span class="span-required">Digite uma senha com no mínimo 8 caracteres</span>
-                </div>
-                <div>
-                    <input type="password" placeholder="Repita sua senha" class="inputs required" oninput="comparePassword()">
-                    <span class="span-required">Senhas devem ser compatíveis</span>
-                </div>
-
-                <textarea name="description" id="description" cols="25" rows="10" placeholder="Fale sobre você"></textarea>
-            
-                <h3>Você é desenvolvedor :</h3>
-                    <select id="" name="">
-                        <option value="front">Front - End</option>
-                        <option value="back">Back - End</option>
-                    </select>
-                  
-
-                <h3>Qual seu nível:</h3>
-                    <select id="" name="">
-                        <option value="basico">Básico</option>
-                        <option value="Intermediario">Intermediário</option>
-                        <option value="avancado">Avançado</option>
-                    </select>
-
-                <h3>Quais suas experiências ?</h3>
-                    <div class="box-select">
-                        <div>
-                            <input type="checkbox" id="html" value="html" name="experiencias">
-                            <label for="html">Html</label>
-                        </div>
-                        <div>
-                            <input type="checkbox" id="css" value="css" name="experiencias">
-                            <label for="css">Css</label>
-                        </div>
-                        <div>
-                            <input type="checkbox" id="js" value="js" name="experiencias">
-                            <label for="js">JavaScript</label>
-                        </div>
-                        <div>
-                            <input type="checkbox" id="php" value="php" name="experiencias">
-                            <label for="php">PHP</label>
-                        </div>
-                        <div>
-                            <input type="checkbox" id="java" value="java" name="experiencias">
-                            <label for="java">Java</label>
-                        </div>
-                        <div>
-                            <input type="checkbox" id="php" value="php" name="experiencias">
-                            <label for="php">Php</label>
-                        </div>
-                        <div>
-                            <input type="checkbox" id="python" value="python" name="experiencias">
-                            <label for="python">python</label>
-                        </div>
+        <fieldset>
+            <legend>Preencha o Formulário</legend>
+            <h3 class="sub">Vagas para devs</h3>
+            <form id="form">
+                    <div>
+                        <input type="text" placeholder="Digite seu nome" class="inputs required" oninput="nameValidate()">
+                        <span class="span-required">O nome deve ter no mínimo 3 caracteres</span>
                     </div>
-                    <button type="submit">Enviar</button>
-            </div>
+                    <div>
+                        <input type="text" placeholder="Digite seu E-mail" class="inputs required" oninput="emailValidate()">
+                        <span class="span-required">Digite um E-mail valido</span>
+                    </div>
+                    <div>
+                        <input type="password" placeholder="Digite sua senha" class="inputs required" oninput="mainPasswordValidate()">
+                        <span class="span-required">Digite uma senha com no mínimo 8 caracteres</span>
+                    </div>
+                    <div>
+                        <input type="password" placeholder="Repita sua senha" class="inputs required" oninput="comparePassword()">
+                        <span class="span-required">Senhas devem ser compatíveis</span>
+                    </div>
+                    <textarea name="description" id="description" cols="25" rows="10" placeholder="Fale sobre você"></textarea>
+            
+                    <h3>Você é desenvolvedor :</h3>
+                        <select id="" name="">
+                            <option value="front">Front - End</option>
+                            <option value="back">Back - End</option>
+                        </select>
+            
+                    <h3>Qual seu nível:</h3>
+                        <select id="" name="">
+                            <option value="basico">Básico</option>
+                            <option value="Intermediario">Intermediário</option>
+                            <option value="avancado">Avançado</option>
+                        </select>
+                    <h3>Quais suas experiências ?</h3>
+                        <div class="box-select">
+                            <div>
+                                <input type="checkbox" id="html" value="html" name="experiencias">
+                                <label for="html">Html</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="css" value="css" name="experiencias">
+                                <label for="css">Css</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="js" value="js" name="experiencias">
+                                <label for="js">JavaScript</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="php" value="php" name="experiencias">
+                                <label for="php">PHP</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="java" value="java" name="experiencias">
+                                <label for="java">Java</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="php" value="php" name="experiencias">
+                                <label for="php">Php</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="python" value="python" name="experiencias">
+                                <label for="python">python</label>
+                            </div>
+                        </div>
+                        <button type="submit">Enviar</button>
+        </fieldset>
+    </div>
         </form>
     <script src="script.js"></script>
 </body>
